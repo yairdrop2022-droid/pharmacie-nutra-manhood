@@ -23,39 +23,38 @@
     .product-title { font-size: 1.3em; margin: 10px 0; min-height: 50px; }
     .price { font-size: 1.4em; color: #28a745; font-weight: bold; margin: 10px 0; }
     .old-price { text-decoration: line-through; color: #999; font-size: 1em; margin-left: 10px; }
-    .btn { 
-      background: #28a745; 
-      color: white; 
-      padding: 14px; 
-      text-decoration: none; 
-      border-radius: 6px; 
-      display: block; 
-      margin: 15px auto; 
-      width: 85%; 
-      font-weight: bold; 
-      font-size: 1.1em; 
-      transition: background 0.3s; 
+    .btn {
+      background: #28a745;
+      color: white;
+      padding: 14px;
+      text-decoration: none;
+      border-radius: 6px;
+      display: block;
+      margin: 15px auto;
+      width: 85%;
+      font-weight: bold;
+      font-size: 1.1em;
+      transition: background 0.3s;
     }
     .btn:hover { background: #218838; }
     .btn i { margin-right: 8px; }
-    .cart-icon { 
-      position: fixed; 
-      top: 20px; 
-      right: 20px; 
-      background: #ffc107; 
-      color: #333; 
-      padding: 12px 16px; 
-      border-radius: 50%; 
-      font-size: 1.6em; 
-      cursor: pointer; 
-      box-shadow: 0 4px 10px rgba(0,0,0,0.2); 
-      z-index: 1000; 
+    .cart-icon {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      background: #ffc107;
+      color: #333;
+      padding: 12px 16px;
+      border-radius: 50%;
+      font-size: 1.6em;
+      cursor: pointer;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+      z-index: 1000;
     }
     footer { background: #004085; color: white; text-align: center; padding: 20px; margin-top: 50px; }
   </style>
 </head>
 <body>
-
   <!-- Panier fixe factice (clique → redirection affiliée) -->
   <div class="cart-icon" onclick="window.open('https://tl-track.com/tracker/v6a4', '_blank')">
     <i class="fas fa-shopping-cart"></i>
@@ -82,12 +81,16 @@
     </p>
 
     <h2>Nos Produits</h2>
+
     <div class="products">
 
-      <!-- Produit principal : Manhood Plus Gummies -->
+      <!-- Produit 1 -->
       <div class="product-card">
         <div class="badge">Promo -50%</div>
-        <img src="https://via.placeholder.com/300x220?text=Manhood+Plus+Gummies" alt="Manhood Plus Gummies">
+        <img src="images/1.png"
+             alt="Manhood Plus Gummies – Gummies naturels pour booster libido et performances masculines"
+             loading="lazy"
+             width="300" height="220">
         <div class="product-info">
           <div class="product-title">Manhood Plus Gummies</div>
           <p>Gummies naturels pour booster libido, érections et performances</p>
@@ -98,10 +101,13 @@
         </div>
       </div>
 
-      <!-- Produit fictif 2 (pour remplir la boutique) -->
+      <!-- Produit 2 -->
       <div class="product-card">
         <div class="badge">Best-seller</div>
-        <img src="https://via.placeholder.com/300x220?text=Viril+Boost+Capsules" alt="Viril Boost Capsules">
+        <img src="images/2.png"
+             alt="Viril Boost Capsules – Compléments pour endurance prolongée et énergie masculine"
+             loading="lazy"
+             width="300" height="220">
         <div class="product-info">
           <div class="product-title">Viril Boost Capsules</div>
           <p>Endurance prolongée et énergie masculine</p>
@@ -112,10 +118,13 @@
         </div>
       </div>
 
-      <!-- Produit fictif 3 -->
+      <!-- Produit 3 -->
       <div class="product-card">
         <div class="badge">Nouveau</div>
-        <img src="https://via.placeholder.com/300x220?text=Power+Max+Gummies" alt="Power Max Gummies">
+        <img src="images/3.png"
+             alt="Power Max Gummies – Booster naturel pour confiance et performances maximales"
+             loading="lazy"
+             width="300" height="220">
         <div class="product-info">
           <div class="product-title">Power Max Gummies</div>
           <p>Confiance et performances maximales</p>
@@ -138,6 +147,5 @@
   <footer>
     <p>Pharmacie Nutra Suisse – Compléments naturels – Consultez un médecin avant utilisation. Pas un médicament. Livraison & paiement sécurisés en Suisse. © 2026</p>
   </footer>
-
 </body>
 </html>
