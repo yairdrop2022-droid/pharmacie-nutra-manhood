@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pharmacie Nutra Suisse – Boutique Compléments Masculins</title>
+  <meta name="description" content="Boutique en ligne de compléments naturels pour performances masculines. Livraison discrète en Suisse, paiement à la livraison.">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; background: #f8f9fa; color: #333; }
+    header { background: #004085; color: white; padding: 15px 20px; position: relative; }
+    .logo { font-size: 28px; font-weight: bold; text-align: center; }
+    nav ul { list-style: none; padding: 0; display: flex; justify-content: center; gap: 25px; margin: 10px 0; flex-wrap: wrap; }
+    nav a { color: white; text-decoration: none; font-weight: bold; }
+    .container { max-width: 1200px; margin: 20px auto; padding: 0 20px; }
+    h1, h2 { text-align: center; color: #004085; }
+    .products { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 25px; }
+    .product-card { background: white; border: 1px solid #ddd; border-radius: 10px; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.1); text-align: center; position: relative; transition: transform 0.2s; }
+    .product-card:hover { transform: translateY(-5px); }
+    .product-card img { width: 100%; height: 220px; object-fit: cover; }
+    .badge { position: absolute; top: 10px; left: 10px; background: #dc3545; color: white; padding: 6px 12px; border-radius: 5px; font-size: 0.9em; font-weight: bold; }
+    .product-info { padding: 15px; }
+    .product-title { font-size: 1.3em; margin: 10px 0; min-height: 50px; }
+    .price { font-size: 1.4em; color: #28a745; font-weight: bold; margin: 10px 0; }
+    .old-price { text-decoration: line-through; color: #999; font-size: 1em; margin-left: 10px; }
+    .btn { 
+      background: #28a745; 
+      color: white; 
+      padding: 14px; 
+      text-decoration: none; 
+      border-radius: 6px; 
+      display: block; 
+      margin: 15px auto; 
+      width: 85%; 
+      font-weight: bold; 
+      font-size: 1.1em; 
+      transition: background 0.3s; 
+    }
+    .btn:hover { background: #218838; }
+    .btn i { margin-right: 8px; }
+    .cart-icon { 
+      position: fixed; 
+      top: 20px; 
+      right: 20px; 
+      background: #ffc107; 
+      color: #333; 
+      padding: 12px 16px; 
+      border-radius: 50%; 
+      font-size: 1.6em; 
+      cursor: pointer; 
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2); 
+      z-index: 1000; 
+    }
+    footer { background: #004085; color: white; text-align: center; padding: 20px; margin-top: 50px; }
+  </style>
+</head>
+<body>
+
+  <!-- Panier fixe factice (clique → redirection affiliée) -->
+  <div class="cart-icon" onclick="window.open('https://tl-track.com/tracker/v6a4', '_blank')">
+    <i class="fas fa-shopping-cart"></i>
+  </div>
+
+  <header>
+    <div class="logo">Pharmacie Nutra Suisse</div>
+    <nav>
+      <ul>
+        <li><a href="#">Accueil</a></li>
+        <li><a href="#">Virilité & Libido</a></li>
+        <li><a href="#">Énergie & Vitalité</a></li>
+        <li><a href="#">Offres Promo</a></li>
+        <li><a href="#">Mon Compte</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="container">
+    <h1>Boutique Compléments Masculins Naturels</h1>
+    <p style="text-align:center; font-size:1.1em; margin-bottom:30px;">
+      Sélection premium – Livraison discrète en Suisse romande – Paiement à la livraison
+    </p>
+
+    <h2>Nos Produits</h2>
+    <div class="products">
+
+      <!-- Produit principal : Manhood Plus Gummies -->
+      <div class="product-card">
+        <div class="badge">Promo -50%</div>
+        <img src="https://via.placeholder.com/300x220?text=Manhood+Plus+Gummies" alt="Manhood Plus Gummies">
+        <div class="product-info">
+          <div class="product-title">Manhood Plus Gummies</div>
+          <p>Gummies naturels pour booster libido, érections et performances</p>
+          <div class="price">39 € <span class="old-price">78 €</span></div>
+          <a href="https://tl-track.com/tracker/v6a4" target="_blank" class="btn">
+            <i class="fas fa-cart-plus"></i> Acheter maintenant
+          </a>
+        </div>
+      </div>
+
+      <!-- Produit fictif 2 (pour remplir la boutique) -->
+      <div class="product-card">
+        <div class="badge">Best-seller</div>
+        <img src="https://via.placeholder.com/300x220?text=Viril+Boost+Capsules" alt="Viril Boost Capsules">
+        <div class="product-info">
+          <div class="product-title">Viril Boost Capsules</div>
+          <p>Endurance prolongée et énergie masculine</p>
+          <div class="price">45 €</div>
+          <a href="https://tl-track.com/tracker/v6a4" target="_blank" class="btn">
+            <i class="fas fa-cart-plus"></i> Acheter maintenant
+          </a>
+        </div>
+      </div>
+
+      <!-- Produit fictif 3 -->
+      <div class="product-card">
+        <div class="badge">Nouveau</div>
+        <img src="https://via.placeholder.com/300x220?text=Power+Max+Gummies" alt="Power Max Gummies">
+        <div class="product-info">
+          <div class="product-title">Power Max Gummies</div>
+          <p>Confiance et performances maximales</p>
+          <div class="price">49 €</div>
+          <a href="https://tl-track.com/tracker/v6a4" target="_blank" class="btn">
+            <i class="fas fa-cart-plus"></i> Acheter maintenant
+          </a>
+        </div>
+      </div>
+
+    </div>
+
+    <p style="text-align:center; margin: 40px 0; font-size: 1.2em;">
+      <a href="https://tl-track.com/tracker/v6a4" target="_blank" style="color:#004085; text-decoration:underline;">
+        Voir toute la gamme →
+      </a>
+    </p>
+  </div>
+
+  <footer>
+    <p>Pharmacie Nutra Suisse – Compléments naturels – Consultez un médecin avant utilisation. Pas un médicament. Livraison & paiement sécurisés en Suisse. © 2026</p>
+  </footer>
+
+</body>
+</html>
